@@ -1,0 +1,842 @@
+body,
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url(./exteriorhouse.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.container header {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    position: fixed;
+}
+
+.container header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container header .row .col {
+    flex-basis: 33%;
+}
+
+.container header .row .col ul .Home {
+    color: rgba(203, 180, 146);
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.container header .row .col img {
+    width: 70px;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.container header .row .col ul li {
+    display: inline-block;
+    margin-left: 28px;
+    position: relative;
+    cursor: pointer;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.container header .row .col i {
+    font-size: 21px;
+}
+
+.container header .row .col ul li:hover {
+    transition: .3s ease-in;
+    color: gray;
+}
+
+.container .button {
+    position: absolute;
+    bottom: 20px;
+    position: fixed;
+    right: 30px;
+    z-index: 2;
+}
+
+.container .button a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 300;
+    outline: none;
+    color: #fff;
+}
+
+.container .button button {
+    width: 190px;
+    padding: 18px;
+    background-color: rgb(82, 114, 178);
+    cursor: pointer;
+    border: none;
+}
+
+.container .info {
+    padding: 36px 41px 20px;
+    right: 200px;
+    top: 100px;
+    width: max-content;
+    background-color: rgba(30, 48, 84);
+    position: absolute;
+}
+
+.container .info .more-info {
+    text-align: end;
+}
+
+.container .info .more-info .contennt .icon p {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.container .info .more-info .contennt .icon i {
+    position: relative;
+    right: 10px;
+}
+
+.container .chevron {
+    position: absolute;
+    bottom: 350px;
+    right: 20px;
+    color: #fff;
+}
+
+.container .chevron i {
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.container .icons {
+    position: absolute;
+    left: 20px;
+    bottom: 350px;
+}
+
+.container .icons i {
+    color: #fff;
+    rotate: 180deg;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.container .absolut {
+    padding: 60px 20px;
+    width: max-content;
+    background-color: rgba(30, 48, 84);
+    position: absolute;
+    bottom: 0px;
+    opacity: .9;
+    left: 300px;
+    margin: -80px;
+}
+
+.container .absolut .infos h1 {
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.container .absolut .infos h2 {
+    color: #fff;
+    font-family: sans-serif;
+    border-top: 2px solid #fff;
+    padding: 10px 70px 20px;
+}
+
+.container .absolut .infos p {
+    color: #fff;
+    font-family: sans-serif;
+    padding: 3px 0;
+}
+
+.container .absolut .content .infos .btn {
+    text-align: center;
+    position: relative;
+}
+
+.container .absolut .infos button {
+    width: 220px;
+    cursor: pointer;
+    text-align: center;
+    padding: 14px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-family: sans-serif;
+    color: #fff;
+    outline: none;
+}
+
+.container .absolut .infos button:hover {
+    color: gray;
+    transition: .3s ease-in;
+    border-color: gray;
+}
+
+.blog {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.blog .content {
+    text-align: center;
+    position: relative;
+    padding: 120px;
+}
+
+.blog .content h1 {
+    color: rgba(30, 48, 84);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.blog .row {
+    display: flex;
+    align-items: center;
+    padding: 50px 137px;
+}
+
+.blog .row .col {
+    flex-basis: 33%;
+}
+
+.blog .row .col img {
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.blog .row .col .info {
+    text-align: start;
+    position: relative;
+}
+
+.blog .row .col .info h1 {
+    color: rgb(82, 114, 178);
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.blog .row .col .info h2 {
+    color: rgb(82, 114, 178);
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.blog .row .col .info .bedrooms {
+    text-align: start;
+    position: relative;
+}
+
+.blog .row .col .info .bedrooms h4 {
+    color: rgba(203, 180, 146);
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.blog .row .col .info .more-info {
+    text-align: start;
+    position: relative;
+}
+
+.blog .row .col .info .more-info p {
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.blog .row .col .info .btn {
+    text-align: start;
+    position: relative;
+}
+
+.blog .row .col .info .btn button {
+    width: 170px;
+    padding: 10px;
+    border: 2px solid rgb(82, 114, 178);
+    color: rgb(82, 114, 178);
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.blog .row .col .info .btn button:hover {
+    border-color: gray;
+    color: gray;
+}
+
+.blog .infos {
+    text-align: center;
+    padding: 50px 0 100px;
+}
+
+.blog .infos h1 {
+    color: rgba(30, 48, 84);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.wrapper {
+    background-color: rgba(30, 48, 84);
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .row .col:first-child {
+    text-align: end;
+}
+
+.wrapper .row .col {
+    flex-basis: 50%;
+    padding: 0 30px;
+}
+
+.wrapper .row .col h3 {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.wrapper .row .col .info p {
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 300;
+    padding: 3px 0;
+}
+
+.wrapper .row .col .info {
+    text-align: start;
+}
+
+.wrapper .row .col .content {
+    text-align: start;
+}
+
+.wrapper .row .col .content h4 {
+    color: rgb(82, 114, 178);
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.wrapper .row .col h4 {
+    color: rgba(203, 180, 146);
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.wrapper .row .col img {
+    width: 292px;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    margin: -50px 0 50px;
+}
+
+.wrapper-1 {
+    background-color: rgb(41, 59, 95, 1);
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-1 .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-1 .row .col {
+    flex-basis: 50%;
+    padding: 0 30px;
+}
+
+.wrapper-1 .row .col h3 {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: end;
+}
+
+.wrapper-1 .row .col h4 {
+    color: rgba(203, 180, 146);
+    font-family: sans-serif;
+    font-weight: 300;
+    text-align: end;
+}
+
+.wrapper-1 .row .col .info p {
+    color: gray;
+    font-family: sans-serif;
+    text-align: end;
+    font-weight: 300;
+    padding: 3px 0;
+}
+
+.wrapper-1 .row .col .info {
+    text-align: start;
+    position: relative;
+}
+
+.wrapper-1 .row .col .content {
+    text-align: start;
+}
+
+.wrapper-1 .row .col .content h4 {
+    color: rgb(82, 114, 178);
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: end;
+}
+
+.wrapper-1 .row .col img {
+    width: 292px;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 50px 0 0px;
+}
+
+.wrapper-2 {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-2 .content {
+    text-align: center;
+    position: relative;
+    padding: 70px;
+}
+
+.wrapper-2 .content h1 {
+    color: rgba(30, 48, 84);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.wrapper-2 .svg {
+    text-align: center;
+}
+
+.wrapper-2 .svg svg {
+    width: 50px;
+    object-fit: cover;
+    cursor: pointer;
+    fill: rgba(203, 180, 146);
+    color: rgba(203, 180, 146);
+}
+
+.wrapper-2 .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0 100px;
+}
+
+.wrapper-2 .row .col {
+    flex-basis: 33%;
+}
+
+.wrapper-2 .row .col .info h4 {
+    color: rgba(30, 48, 84);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 3px 0;
+}
+
+.wrapper-2 .row .col .info {
+    text-align: center;
+}
+
+.wrapper-2 .row .col .paragraph {
+    text-align: center;
+}
+
+.wrapper-2 .row .col .paragraph p {
+    color: gray;
+    font-family: sans-serif;
+    padding: 3px 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.blog-12 {
+    background-image: url(./pngtree-impressive-garden-and-pool-surround-big-contemporary-white-villa-in-3d-picture-image_3759351.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
+.blog-12::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    background: rgba(30, 48, 84, 50%);
+}
+
+.blog-12 .content {
+    text-align: center;
+    padding: 100px;
+    position: relative;
+}
+
+.blog-12 .content h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.blog-12 .svg {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.blog-12 .svg .svg1 {
+    flex-basis: 20%;
+}
+
+.blog-12 .svg .svg1 svg {
+    width: 30px;
+    object-fit: cover;
+    fill: rgba(203, 180, 146);
+    position: relative;
+}
+
+.blog-12 .svg .svg1 .people {
+    padding: 10px;
+}
+
+.blog-12 .svg .svg1 .info p {
+    color: #fff;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.blog-12 .svg .svg1 .people h3 {
+    color: rgba(203, 180, 146);
+    font-family: sans-serif;
+    position: relative;
+    font-weight: 600;
+}
+
+.lastsection {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.lastsection .content {
+    text-align: center;
+    position: relative;
+    padding: 100px;
+}
+
+.lastsection .content h1 {
+    color: rgba(30, 48, 84);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.lastsection .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lastsection .row .col {
+    flex-basis: 33%;
+}
+
+.lastsection .row .col h3 {
+    color: rgba(30, 48, 84);
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.lastsection .row .col h4 {
+    color: rgba(30, 48, 84);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: start;
+}
+
+.lastsection .map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 100px;
+}
+
+.lastsection .map .maps {
+    flex-basis: 33%;
+}
+
+.lastsection .map .maps .puts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.lastsection .map .maps .puts input {
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    font-size: 15px;
+}
+
+.lastsection .map .maps .puts input:hover {
+    background-color: rgb(236, 227, 227);
+}
+
+.lastsection .map .input input {
+    padding: 15px 20px 130px 9px;
+    text-align: start;
+    width: 291px;
+    font-size: 15px;
+    outline: none;
+}
+
+.lastsection .map .input {
+    text-align: start;
+    position: relative;
+    padding-top: 15px;
+}
+
+.lastsection .map .input input:hover {
+    background-color: rgb(236, 227, 227);
+}
+
+.lastsection .map .maps .btn {
+    position: relative;
+    text-align: end;
+    padding-right: 70px;
+}
+
+.lastsection .info {
+    text-align: center;
+    position: relative;
+}
+
+.lastsection .info h4 {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: gray;
+    text-align: start;
+}
+
+.lastsection .map .maps iframe {
+    text-align: center;
+}
+
+.lastsection .map .maps .btn button {
+    width: 110px;
+    padding: 10px;
+    font-size: 17px;
+    background-color: rgba(30, 48, 84);
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.lastsection .map .maps .btn button:hover {
+    transition: .3s ease-in;
+    background: gray;
+}
+
+.lastsection .moreinfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 35px 100px;
+}
+
+.lastsection .moreinfo .smallcontent h2 {
+    color: rgba(30, 48, 84);
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.lastsection .moreinfo .smallcontent h3 {
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.lastsection .moreinfo .smallcontent h4 {
+    filter: blur(3px);
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+.foot {
+    width: 100%;
+    background-color: rgba(203, 180, 146);
+    padding: 30px;
+    border-top: 4px solid rgba(30, 48, 84);
+}
+
+.foot .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.foot .row .col {
+    flex-basis: 38%;
+}
+
+.foot .row .col h4 {
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: end;
+}
+
+.foot .row .col span {
+    color: rgba(30, 48, 84);
+    font-family: sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foot .row .col i {
+    font-size: 30px;
+    text-align: end;
+}
+
+
+/* loader */
+
+.container,
+.wrapper,
+.wrapper-1,
+.wrapper-2,
+.blog,
+.blog-12,
+.lastsection,
+.foot {
+    animation: allTree 1.5s ease-in;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #de3500 #0000 #000 #0000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: 1s rotate linear infinite;
+}
+
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: -4;
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color: #000;
+    transform: translate(-10px, 19px) rotate(-35deg);
+}
+
+.loader:after {
+    border-color: #de3500 #0000 #0000 #0000;
+    transform: translate(32px, 3px) rotate(-35deg);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes allTree {
+    0%,
+    90% {
+        display: none;
+    }
+    100% {
+        display: block !important;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: .2;
+        transition: 0.3s ease-in;
+    }
+    to {
+        opacity: 1;
+        transition: 0.3s ease-out;
+    }
+}

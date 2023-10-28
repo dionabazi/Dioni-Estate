@@ -1,0 +1,15 @@
+{
+    "images": [{
+            "name": "1stimg.png",
+            "url": "/exteriorhouse.webp"
+        },
+        {
+            "name": "2ndimg.png",
+            "url": "/84770f_b243d52fd3a74e869ed65de985a0d275~mv2.webp"
+        },
+        {
+            "name": "3ndimg.png",
+            "url": "/84770f_e979003896a44dab8a99435565b3e9f0~mv2.webp"
+        }
+    ]
+}
